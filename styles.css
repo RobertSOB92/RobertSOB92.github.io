@@ -1,0 +1,42 @@
+td { /* selector*/
+
+    text-align: center; /*
+    property     value; */
+}  
+.sup_element {
+    color: red;
+}
+
+h3 {
+    color: blueviolet;
+}
+
+p{
+    color: brown;
+}
+/* body {
+
+    color: blue;
+} */
+
+
+/* h3, p {
+
+    color: aquamarine;
+} */
+
+
+
+/* sup.sup_element {
+
+    color: red;
+} */
+
+/* footer p {
+    color: aqua;
+} */   /*kazdy p pod footer bedie mial takie cechy */
+
+/* footer > p {
+
+    color: blueviolet;
+} bezposrednie dziecko ma cechy  */
