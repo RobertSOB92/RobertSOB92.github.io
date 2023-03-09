@@ -3,11 +3,15 @@ body {
     font-size: 20px;
     margin-left: 100px;
     margin-top: 100px;
-    background-image: url(https://picsum.photos/id/237/200/300
-    );
+    /* background-image: url(https://picsum.photos/id/237/200/300
+    ); */
 }
 
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
 td { /* selector*/
@@ -58,6 +62,23 @@ div#main_content {
     border-style: dotted; 
 
 }
+a:hover {
+    color: blueviolet;
+} /*podswietlanie po najechaniu*/
+
+table tr:first-child {
+    color:  blue;
+}
+span {
+    display: block;
+}
+header a {
+    float: right;
+}
+article {
+    
+}
+
 /* body {
 
     color: blue;
