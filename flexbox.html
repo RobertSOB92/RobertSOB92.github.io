@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cwiczenie CSS Flexbox</title>
+    
+    <style>
+        .kontener-flex {
+            background-color: #D9D7D7;
+
+            /* START CWICZENIA */
+            /* style Flexbox */
+            /* To sa style dla kontenera Flexbox. Bezposrednie dzieci tego kontenera czyli elementy z liczbami beda mialy zastosowane wlasnosci Flexbox. Styl ponizej musi istniec aby style Flexbox dzialaly, odkomentuj skrotem "Ctrl + /" lub recznie. Nie musisz nic zapisywac. Efekt po prawej powinien pojawic sie automatycznie. */
+            /* display: flex; */
+            /* Czyli domyslnie Flex wyswietla elementy w wierszu */
+
+            /* Kierunek wyswietlania elementow w konterze Flexbox. Odkomentowana wartosc domyslna, czyli elementy obok siebie poczawszy od lewej strony. Sprawdz reszte poprzez odkomentowanie i obserowacje efektow. */
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* pozostaw flex-direction: row; reszte zakomentuj i przejdz dalej */
+
+            /* Zawijanie elementow w wiersze. Wrap domyslnie czyli bez zawijania wierszy, powieksz ekran jesli trzeba "Ctrl + kolko myszy" aby zobaczyc efekty */
+            flex-wrap: nowrap;
+            /* flex-wrap: wrap; */
+
+            /* pozostaw nowrap; "Ctrl + 0" aby przywrocic ekran do normalnego stanu jesli trzeba */
+
+            /* Sposob rozmieszczenia elementow w konterze. flex-start domyslnie czyli od lewej strony. Aby zobaczyc efekty moze byc koniecznosc podregulowania widoku po prawej. */
+            justify-content: flex-start;
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+
+            /* space around dodaje rowniez przestrzen po bokach, pozostaw flex-start */
+
+            /* Sposob wypelnienia przestrzeni kontenera przez elementy. Aby to zobaczyc odkomentuj wysokosc kontenera. stretch domyslnie czyli rozciagniecie na cala wysokosc kontenera. */
+            /* height: 300px; */
+            align-items: stretch;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: baseline; */
+
+            /* baseline zadko uzywane do wyrownania wszystkich elementow do jednej poziomej linii, efekt bedzie widac gdy np rozna wielkosc czcionek bedzie przypisana do pomaranczowych prostokatow, pozostaw stretch, zakomentuj wysokosc kontenera */
+
+            /* Sposob rozmieszczenia wierszy elementow w konterze. Aby to zobaczyc powieksz ekran jesli trzeba "Ctrl + kolko myszki" lub podreguluj kursorem, odkomentuj zawijanie wierszy i wysokosc kontenera. stretch domyslnie czyli rozciagniecie wierszy na cala wysokosc kontenera */
+            /* flex-wrap: wrap; */
+            /* height: 300px; */
+            align-content: stretch;
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: center; */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+
+            /* pozostaw  stretch, zakomentuj zawijanie wierszy i wysokosc kontenera, "Ctrl + 0" jesli trzeba*/
+        }
+
+        /* KONIEC CWICZENIA */
+
+    
+        .kontener-flex > div { /* bezposrednie dzieci div kontenera flex */
+            background-color: #FC7629;
+            color: #2A3655;
+            line-height: 75px;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            font-size: 38px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header style="text-align: right;">
+    <a href="index.html">powrót</a>
+    </header>     
+    <h1>Cwiczenie Flexbox CSS</h1>
+    <div class="kontener-flex">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+    </div>
+</body>
+</html>

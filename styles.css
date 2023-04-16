@@ -1,120 +1,88 @@
 body {
-    font-family: 'Climate Crisis';
-    font-size: 20px;
-    margin-left: 100px;
-    margin-top: 100px;
-    /* background-image: url(https://picsum.photos/id/237/200/300
-    ); */
+    font-family: 'Nunito';
+    font-size: 22px;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+   box-sizing: border-box; 
+   margin: 0;
+   padding: 0;
 }
 
 
-td { /* selector*/
-
-    text-align: center; /*
-    property     value; */
-}  
-
 table {
-    text-align: center; /*
-    property     value; */
+    text-align: center;
     line-height: 200%;
     width: 300px;
     height: 200px;
-    border:  1px solid black;
-    border-collapse: collapse;
+    border: 1px solid black;
+    border-collapse:collapse;
 }
-.sup_element {
-    color: red;
-}
+
+
 h1 {
-    color: blue;
+    color: #496BD8;
 }
 
 h3 {
-    color: blueviolet;
+    color: #FC7629;
     font-size: 30px;
     font-weight: bold;
 }
 
-p{
-    color: brown;
+p {
+    color: #2A3655;
     font-weight: bold;
-
 }
+
+.sup_element {
+    color: red;
+}
+
+
 footer strong {
-    text-decoration: underline wavy ;
+    text-decoration: underline wavy #FF66CE;
 }
 
 mark {
     border-radius: 5px;
 }
 
-div#main_content {
-
-    background-color: cornflowerblue;
-    padding:  20px;
-    border-style: dotted; 
-
-}
-a:hover {
-    color: blueviolet;
-} /*podswietlanie po najechaniu*/
-
-table tr:first-child {
-    color:  blue;
-}
-span {
-    display: block;
-}
-header a {
-    float: right;
-}
-article {
+div#main-content {
+    background-color: #CACACA;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: flex-end; */
+    /* align-content: center; */
     
 }
 
-/* body {
-
-    color: blue;
-} */
-
-
-/* h3, p {
-
-    color: aquamarine;
-} */
-
-
-
-/* sup.sup_element {
-
-    color: red;
-} */
-
-/* footer p {
-    color: aqua;
-} */   /*kazdy p pod footer bedie mial takie cechy */
-
-/* footer > p {
-
-    color: blueviolet;
-} bezposrednie dziecko ma cechy  */
-
-/* .first-class {
-    color:  green;
+a:hover {
+   color: #FF66CE; 
 }
-h1 {
-    color: green;
+a {
+    display: flex;
+    
 }
-.third-class {
-    color: red !important;
+
+#articles {
+    flex-grow: 1;
 }
-#first-id {
-    color: blue;
-} */
+#skills {
+    flex-grow: 1;
+    /* align-self: center; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+#powrot {
+    text-align: right;
+}

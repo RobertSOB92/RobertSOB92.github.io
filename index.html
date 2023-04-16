@@ -1,107 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moja strona</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap">
+    <title>Moja strona</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
     <link rel="stylesheet" href="styles.css">
-  
+
 </head>
 <body>
 
-  <!-- <div class="first-class" id="first-id">
-    <div class="class-second-">
-        <h1 style="color: green;" id="first-id"
-         class="third-class">text </h1>
-    </div>
-  </div> hierarchia stylów
-       -->
     <header>
-        <h1>siemaneczko  to&nbsp;jest&nbsp;header</h1>
-        <a href="contact.html">conatct</a>
-        <br>
-        <br>
+        <h1>Siemaneczko!</h1>
+        <a href="contact.html">Contact me</a>
+        <a href="flexbox.html">ćwiczenie flexbox</a>
     </header>
-
-    <div style=" clear: both;"></div>
-<div id="main_content">
-
-   <section>
-     <article>
-   <br>
-   <h3 style="color: red;">pierwszy artykul na blogu</h3>
-   <p>tresc pierwszego posta</p>
-   <br>
-     </article>
-     <article>
-   <h3>drugi artykul na blogu</h3>
-   <p>tresc drugiego posta</p>
-     </article>
-
-   <br>
-
-     <article>
-   <h3 >trzeci artykul na blogu</h3>
-   <p >tresc trzeciego posta</p>
-   <br><!-- new line tag -->
-     </article>
-
-   <h3>czwarty artykul na blogu</h3>
-   <p>tresc <mark>mojego </mark> czwartego <i>  df </i>posta <br>
-        i jego kolejna czesc :P
-     <br><small>razem<sup class="sup_element">dfdf*</sup></small> 
-     <sup class="sup_element">*</sup>
-     </p>
-   </section>
-   </div>
-  <br>
-  <br>
-  
-  
-
-
-   <div id="skills"> <!-- div jest elementem blokowym -->
-     My skills 
-     <ol> <!-- lista "ordered"-->
-         <li>znam html</li>
-         <li>ale nie css</li>
-     </ol>
-     <ul> 
-         <li>znam html</li>
-         <li>ale nie css</li>
-     </ul>
     
-     <table border="1">
-         <tr>
-             <th>technology</th>
-             <th>level</th>
-         </tr>
-         <tr>
-             <td>html</td>
-             <td>4</td>
-         </tr>
-         <tr>
-             <td>css</td>
-             <td>0</td>
-         </tr>
-         <tr></tr>
-         <tr></tr>
-     </table>
+    <br>
 
-   </div>
- <br><br><br>
- <footer>
-     <div>
-         footer area. <strong>me </strong>
-         &copy;
-         <b>ja</b>
-         <p>footer p </p>
-       </div>
-       <p>footer p </p>
- </footer>
-  
- <script src="scripts.js"></script>
- </body>
- </html>
+    <div id="main-content">
+
+        <section id="articles">
+            <article>
+                <h3>This is my first blog post</h3>
+                <p>This is the content of my first blog post</p>
+                <!-- width of content area only -->
+            </article>
+            
+            <br>
+    
+            <article>
+                <h3>This is my second blog post</h3>
+                <p>This is the content of my second blog &lt;something&gt; post</p>
+            </article>
+            
+            <br> <!-- this tag is used for new line -->
+    
+            <article>
+                <h3>This is my third blog post</h3>
+                <p>This is the <mark>content</mark> of my third blog post. <br> Continue the content after <i>breaking line</i>. <sup class="sup_element">*</sup></p>
+                <small><sup class="sup_element">*</sup>Another sentence</small>
+            </article>
+
+
+        </section>
+
+        <div id="skills"> <!-- div is the block element -->
+            My skills
+
+            <table border="1">
+                <tr>
+                    <th>Technology</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>0 :(</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div>
+            Footer area. &copy; <strong>Me</strong> & <b>My Tutor</b>
+        </div>
+    </footer>
+
+    <!-- Content not wrapped in any tag (barely used in reality) -->
+    <script src="scripts.js"></script>
+</body>
+</html>
